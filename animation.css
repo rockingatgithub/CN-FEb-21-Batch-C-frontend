@@ -1,9 +1,9 @@
 @keyframes changeShape {
   from {
-    border: 2ps solid red;
+    height: 400px;
   }
   to {
-    border: none;
+    height: 600px;
   }
 
   /* instead to-from one may use percentages also */
@@ -14,9 +14,9 @@
   height: 100px;
   width: 100px;
   /* tranform to add positions */
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
   /* transition to add animation in transition */
-  transition: 1s ease-in-out;
+  /* transition: 1s ease-in-out; */
 
   /* animation */
   /* animation: changeShape 1s ease-in-out infinite alternate */
