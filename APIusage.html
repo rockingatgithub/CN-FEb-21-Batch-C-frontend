@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Nasa Open APi image</h1>
+    <br/>
+    <button onclick="getImage()" >Get Image</button>
+
+    <image id="image-random" src="" />
+<!-- 
+    <form onsubmit="onformsubmit(e)">
+    <input type="file"  name="filename" />
+    <input type="submit" name="submit" /> -->
+</form>
+
+    <script>
+        async function getImage () {
+            let res = await fetch('https://api.nasa.gov/planetary/apod?api_key=gchzecqoKgnVINsC2jE4SsSZJnmfjnJQHxPFeCXx', {method: 'get'})
+            let response = await res.json();  
+            console.log('res', response); 
+            document.getElementById("image-random").setAttribute('src', response.url);
+
+        }
+
+        function onformsubmit(e) {
+            e.preventDefault();
+            console.log(e);
+        }
+
+
+    // let xhr = new XMLHttpRequest()
+    // xhr.onload = () => {  console.log(xhr.response)  }
+    // xhr.open('get', 'https://dog.ceo/api/breeds/image/random')
+    // xhr.send();
+
+
+    </script>
+
+</body>
+</html>

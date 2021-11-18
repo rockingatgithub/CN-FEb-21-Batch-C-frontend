@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       "use strict"; // uncomment for use strict effect.....
+      function demo() {
+        console.log(this);
+      }
+
+      const demo2 = () => {  console.log(this) }
+
+      let obj = {
+        prop1: "12",
+        innerFunction: function () {
+          console.log(this);
+        },
+      };
+
+      demo();
+      demo2();
+      demo.apply(obj);
+      obj.innerFunction();
+    </script>
+  </body>
+</html>
