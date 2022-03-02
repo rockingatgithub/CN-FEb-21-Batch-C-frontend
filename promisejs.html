@@ -40,22 +40,22 @@
 
         //call back hell / pyramid of doom
         
-        // let xhrobj = new XMLHttpRequest();
+        let xhrobj = new XMLHttpRequest();
 
-        // xhrobj.open('login');
+        xhrobj.open('login');
 
-        // xhrobj.onload = () => {
+        xhrobj.onload = () => {
 
-        //     xhrobj.open('profile')
+            xhrobj.open('profile')
 
-        //     xhrobj.onload = () => {
-        //         xhrobj.open('wall')
+            xhrobj.onload = () => {
+                xhrobj.open('wall')
 
-        //         xhrobj.onload = () => {
+                xhrobj.onload = () => {
 
-        //         }
-        //     }
-        // }
+                }
+            }
+        }
 
     </script>
 </body>

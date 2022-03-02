@@ -21,11 +21,11 @@
         // return obj;
       }
 
-      let creteStudent1 = new Student1("abcd", 1, 12);
-      let creteStudent2 = new Student1("abcde", 2 ,14);
+      let createStudent1 = new Student1("abcd", 1, 12);
+      let createStudent2 = new Student1("abcde", 2 ,14);
 
-      console.log(Student1.prototype);
-      console.log(Student1.prototype.constructor);
+      // console.log(Student1.prototype);
+      // console.log(Student1.prototype.constructor);
 
       //first way to have a method :- will make copies of functions for all objects created
 
@@ -39,11 +39,11 @@
         // return obj;
       }
 
-      let creteStudent3 = new Student2("abcd", 12);
-      let creteStudent4 = new Student2("abcde", 14);
+      let createStudent3 = new Student2("abcd", 12);
+      let createStudent4 = new Student2("abcde", 14);
 
-      console.log(creteStudent3);
-      console.log(creteStudent4);
+      // console.log(createStudent3);
+      // console.log(createStudent4);
 
       //second way to have a method :- using prototype to save from repition
 
@@ -51,11 +51,13 @@
         console.log(this.name);
       };
 
-      let creteStudent5 = new Student2("abcd", 12);
-      let creteStudent6 = new Student2("abcde", 14);
+      let createStudent11 = new Student1("xyz", 45, 76);
 
-      console.log(creteStudent5);
-      console.log(creteStudent6);
+      let createStudent5 = new Student2("abcd", 12);
+      let createStudent6 = new Student2("abcde", 14);
+
+      // console.log(createStudent5);
+      // console.log(createStudent6);
 
     </script>
   </body>
